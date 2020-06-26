@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Quaoar": {
+    "fuse": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,12 +17,12 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Quaoar",
+            "aot": true,
+            "outputPath": "dist/fuse",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -30,7 +30,8 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "showCircularDependencies": false
           },
           "configurations": {
             "production": {
@@ -45,19 +46,43 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
+              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "4mb",
+                  "maximumError": "6mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
+                  "maximumWarning": "6kb"
+                }
+              ]
+            },
+            "ec": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
+              "sourceMap": true,
+              "extractCss": true
+            },
+            "hmr": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.hmr.ts"
                 }
               ]
             }
@@ -66,18 +91,25 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Quaoar:build"
+            "browserTarget": "fuse:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Quaoar:build:production"
+              "browserTarget": "fuse:build:production"
+            },
+            "hmr": {
+              "hmr": true,
+              "browserTarget": "fuse:build:hmr"
+            },
+            "ec": {
+              "browserTarget": "fuse:build:ec"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Quaoar:build"
+            "browserTarget": "fuse:build"
           }
         },
         "test": {
@@ -114,15 +146,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Quaoar:serve"
+            "devServerTarget": "fuse:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Quaoar:serve:production"
+              "devServerTarget": "fuse:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "Quaoar"
+    }
+  },
+  "defaultProject": "fuse",
+  "cli": {
+    "analytics": "6586b69f-0550-4bac-a376-896b9a136f60"
+  }
 }
