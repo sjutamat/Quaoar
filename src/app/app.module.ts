@@ -18,17 +18,25 @@ import { fuseConfig } from 'app/fuse-config';
 import { AppComponent } from 'app/app.component';
 import { LayoutModule } from 'app/layout/layout.module';
 import { SampleModule } from 'app/main/sample/sample.module';
+import { HomeModule } from 'app/main/home/home.module';
+import { LotteryModule } from 'app/main/lottery/lottery.module';
+import { AwardModule } from 'app/main/award/award.module';
+import { OrdersModule } from 'app/main/orders/orders.module';
+import { DepositModule } from 'app/main/deposit/deposit.module';
+import { CreditreportModule } from 'app/main/creditreport/creditreport.module';
+import { GuidlineModule } from 'app/main/guidline/guidline.module';
+import { CreatesetnumberModule } from 'app/main/createsetnumber/createsetnumber.module';
 
 const appRoutes: Routes = [
     {
-        path      : '**',
-        redirectTo: 'sample'
+        path      : '**', redirectTo: 'home'
     }
 ];
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+       
     ],
     imports     : [
         BrowserModule,
@@ -53,8 +61,17 @@ const appRoutes: Routes = [
         FuseThemeOptionsModule,
 
         // App modules
+
         LayoutModule,
-        SampleModule
+        SampleModule,
+        HomeModule,
+        LotteryModule,
+        AwardModule,
+        OrdersModule,
+        DepositModule,
+        CreditreportModule,
+        GuidlineModule,
+        CreatesetnumberModule
     ],
     bootstrap   : [
         AppComponent

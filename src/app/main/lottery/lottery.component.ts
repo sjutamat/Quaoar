@@ -6,21 +6,22 @@ import { locale as english } from '../i18n/en';
 import { locale as thai } from '../i18n/th';
 
 @Component({
-    selector   : 'sample',
-    templateUrl: './sample.component.html',
-    styleUrls  : ['./sample.component.scss']
+  selector: 'app-lottery',
+  templateUrl: './lottery.component.html',
+  styleUrls: ['./lottery.component.scss']
 })
-export class SampleComponent
-{
-    /**
+export class LotteryComponent {
+
+  /**
      * Constructor
      *
      * @param {FuseTranslationLoaderService} _fuseTranslationLoaderService
      */
     constructor(
-        private _fuseTranslationLoaderService: FuseTranslationLoaderService
-    )
-    {
-        this._fuseTranslationLoaderService.loadTranslations(english, thai);
-    }
+      private _fuseTranslationLoaderService: FuseTranslationLoaderService
+  )
+  {
+      this._fuseTranslationLoaderService.loadTranslations(english, thai);
+  }
+
 }

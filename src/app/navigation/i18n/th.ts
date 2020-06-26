@@ -1,5 +1,5 @@
 export const locale = {
-    lang: 'tr',
+    lang: 'th',
     data: {
         'NAV': {
             'APPLICATIONS': 'Programlar',

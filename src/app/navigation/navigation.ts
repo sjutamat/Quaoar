@@ -30,7 +30,7 @@ export const navigation: FuseNavigation[] = [
         //'translate': 'NAV.COUNTDOWN',
         'type'     : 'item',
         'icon'     : 'home',
-        'url'      : '/components/countdown'
+        'url'      : '/home'
     },
     {
         'id'       : 'lottery',
@@ -38,7 +38,7 @@ export const navigation: FuseNavigation[] = [
         //'translate': 'NAV.COUNTDOWN',
         'type'     : 'item',
         'icon'     : 'games',
-        'url'      : '/components/countdown'
+        'url'      : '/lottery'
     },
     {
         'id'       : 'orders',
@@ -46,7 +46,7 @@ export const navigation: FuseNavigation[] = [
         //'translate': 'NAV.COUNTDOWN',
         'type'     : 'item',
         'icon'     : 'format_list_bulleted',
-        'url'      : '/components/countdown'
+        'url'      : '/orders'
     },
     {
         'id'       : 'award',
@@ -54,7 +54,7 @@ export const navigation: FuseNavigation[] = [
         //'translate': 'NAV.COUNTDOWN',
         'type'     : 'item',
         'icon'     : 'wb_sunny',
-        'url'      : '/components/countdown'
+        'url'      : '/award'
     },
     {
         'id'       : 'depositwithdral',
@@ -62,7 +62,7 @@ export const navigation: FuseNavigation[] = [
         //'translate': 'NAV.COUNTDOWN',
         'type'     : 'item',
         'icon'     : 'widgets',
-        'url'      : '/components/countdown'
+        'url'      : '/deposit'
     },
     {
         'id'       : 'creditreport',
@@ -70,7 +70,7 @@ export const navigation: FuseNavigation[] = [
         //'translate': 'NAV.COUNTDOWN',
         'type'     : 'item',
         'icon'     : 'monetization_on',
-        'url'      : '/components/countdown'
+        'url'      : '/creditreport'
     },
     {
         'id'       : 'guidline',
@@ -78,7 +78,7 @@ export const navigation: FuseNavigation[] = [
         //'translate': 'NAV.COUNTDOWN',
         'type'     : 'item',
         'icon'     : 'explore',
-        'url'      : '/components/countdown'
+        'url'      : '/guidline'
     },
     {
         'id'       : 'createsetnumber',
@@ -86,6 +86,6 @@ export const navigation: FuseNavigation[] = [
         //'translate': 'NAV.COUNTDOWN',
         'type'     : 'item',
         'icon'     : 'bubble_chart',
-        'url'      : '/components/countdown'
+        'url'      : '/createsetnumber'
     },
 ];
