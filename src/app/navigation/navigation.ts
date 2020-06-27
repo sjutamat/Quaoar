@@ -27,7 +27,7 @@ export const navigation: FuseNavigation[] = [
     {
         'id'       : 'home',
         'title'    : 'หน้าหลัก',
-        //'translate': 'NAV.COUNTDOWN',
+        'translate': 'NAV.HOME.TITLE',
         'type'     : 'item',
         'icon'     : 'home',
         'url'      : '/home'
@@ -35,7 +35,7 @@ export const navigation: FuseNavigation[] = [
     {
         'id'       : 'lottery',
         'title'    : 'แทงหวย',
-        //'translate': 'NAV.COUNTDOWN',
+        'translate': 'NAV.LOTTERY.TITLE',
         'type'     : 'item',
         'icon'     : 'games',
         'url'      : '/lottery'
@@ -43,7 +43,7 @@ export const navigation: FuseNavigation[] = [
     {
         'id'       : 'orders',
         'title'    : 'รายการโพย',
-        //'translate': 'NAV.COUNTDOWN',
+        'translate': 'NAV.ORDERS.TITLE',
         'type'     : 'item',
         'icon'     : 'format_list_bulleted',
         'url'      : '/orders'
@@ -51,7 +51,7 @@ export const navigation: FuseNavigation[] = [
     {
         'id'       : 'award',
         'title'    : 'ดูผลรางวัล',
-        //'translate': 'NAV.COUNTDOWN',
+        'translate': 'NAV.AWARD.TITLE',
         'type'     : 'item',
         'icon'     : 'wb_sunny',
         'url'      : '/award'
@@ -59,7 +59,7 @@ export const navigation: FuseNavigation[] = [
     {
         'id'       : 'depositwithdral',
         'title'    : 'แจ้งฝาก-ถอน',
-        //'translate': 'NAV.COUNTDOWN',
+        'translate': 'NAV.DEPOSIT.TITLE',
         'type'     : 'item',
         'icon'     : 'widgets',
         'url'      : '/deposit'
@@ -67,7 +67,7 @@ export const navigation: FuseNavigation[] = [
     {
         'id'       : 'creditreport',
         'title'    : 'รายงานเครดิต',
-        //'translate': 'NAV.COUNTDOWN',
+        'translate': 'NAV.CREDITREPORT.TITLE',
         'type'     : 'item',
         'icon'     : 'monetization_on',
         'url'      : '/creditreport'
@@ -75,7 +75,7 @@ export const navigation: FuseNavigation[] = [
     {
         'id'       : 'guidline',
         'title'    : 'ระบบแนะนำ',
-        //'translate': 'NAV.COUNTDOWN',
+        'translate': 'NAV.GUIDLINE.TITLE',
         'type'     : 'item',
         'icon'     : 'explore',
         'url'      : '/guidline'
@@ -83,7 +83,7 @@ export const navigation: FuseNavigation[] = [
     {
         'id'       : 'createsetnumber',
         'title'    : 'สร้างเลขชุด',
-        //'translate': 'NAV.COUNTDOWN',
+        'translate': 'NAV.SETNUMBER.TITLE',
         'type'     : 'item',
         'icon'     : 'bubble_chart',
         'url'      : '/createsetnumber'
