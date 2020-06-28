@@ -3,7 +3,8 @@ export const locale = {
     data: {
         'PAGE': {
             'HOME': {
-                'TITLE':'Home page'
+                'TITLE':'Home page',
+                'HEADERPAGE':'News'
             },
             'LOTTERRY':{
                 'TITLE' : 'Lottery'
