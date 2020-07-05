@@ -12,7 +12,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { FuseSharedModule } from '@fuse/shared.module';
 import { FuseDemoModule } from '@fuse/components/demo/demo.module';
 import { FuseHighlightModule } from '@fuse/components';
-
+import { TranslateModule } from '@ngx-translate/core';
 import { LotteryComponent } from 'app/main/lottery/lottery.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 
@@ -29,7 +29,7 @@ const routes: Routes = [
     ],
     imports     : [
         RouterModule.forChild(routes),
-
+        TranslateModule,
         MatButtonModule,
         MatButtonToggleModule,
         MatIconModule,

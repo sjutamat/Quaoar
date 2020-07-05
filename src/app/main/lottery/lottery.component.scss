@@ -23,10 +23,32 @@ lottery {
 
                     .fuse-card {
                         min-width: 170px !important;
+                        border-radius: 6px;
 
                         .text-boxed {
                             font-size: 9px;
                         }
+                        .white-fg{
+                            color:#f9e09b;
+                        }
+                        .light-green-fg{
+                            color:#6dec72;
+                        }
+                        .smoke-gray-fg{
+                            color:#cac8c4;
+                        }
+                        .dark-red-fg{
+                            color:#bf0d00;
+                        }
+                    }
+                    .active{
+                        //background-image: linear-gradient(80deg, #04682f, #022c1485);
+                        background-color: #007113;
+                    }
+
+                    .inactive{
+                        //background-image: linear-gradient(98deg, #c9b4a7, #c9b4a714);
+                        background-color: gray;
                     }
                 }
 

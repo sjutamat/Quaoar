@@ -2,39 +2,70 @@
     <!-- CONTENT -->
     <div class="content p-8" [ngClass]="this.view">
         <div id="thai-lottery">
-            <div class="mat-title mt-32">หวยไทย</div>
+            <div class="mat-title mt-32">{{'PAGE.LOTTERY.cate.thai.title' | translate}}</div>
             <div class="cards">
                 <div class="card">
                     <div class="card-preview">
-    
-                        <div class="fuse-card">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
                             <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">หวยรัฐบาล
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">{{'PAGE.LOTTERY.cate.thai.thaicode.government' | translate}}
                                 </div>
-                                <div class="green-fg font-size-30 line-height-50">
+                                <div class="light-green-fg font-size-20 line-height-50">
                                     01:45:53
                                 </div>
                                 <div class="font-size-12 line-height-12">
-                                   <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                   <span class="text-boxed smoke-gray-fg">{{'PAGE.LOTTERY.roundclose' | translate}} 03/07/2563 02:00:00</span> 
                                 </div>
                             </div>
-    
                         </div>
                     </div>
                 </div>
-               
+
                 <div class="card">
                     <div class="card-preview">
-    
-                        <div class="fuse-card">
+                        <div class="fuse-card" [ngClass]="false ? 'active' : 'inactive'">
                             <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">หุ้นไทยเย็น
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">{{'PAGE.LOTTERY.cate.thai.thaicode.thai_c9_1' | translate}}
                                 </div>
-                                <div class="red-fg font-size-30 line-height-50">
+                                <div class="dark-red-fg font-size-20 line-height-50">
                                     ปิดรับแทง
                                 </div>
                                 <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                    <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="false ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">{{'PAGE.LOTTERY.cate.thai.thaicode.thai_set_1' | translate}}
+                                </div>
+                                <div class="font-size-20 line-height-50" [ngClass]="false?'light-green-fg':'dark-red-fg'">
+                                    ปิดรับแทง
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                    <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">{{'PAGE.LOTTERY.cate.thai.thaicode.thai_set_2' | translate}}
+                                </div>
+                                <div class="font-size-20 line-height-50" [ngClass]="true?'light-green-fg':'dark-red-fg'">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
                                 </div>
                             </div>
     
@@ -44,69 +75,69 @@
     
                 <div class="card">
                     <div class="card-preview">
-                        <div class="fuse-card">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
                             <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">จับยี่กี
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">{{'PAGE.LOTTERY.cate.thai.thaicode.thai_c9_2' | translate}}
                                 </div>
-                                <div class="green-fg font-size-30 line-height-50">
+                                <div class="font-size-20 line-height-50" [ngClass]="true?'light-green-fg':'dark-red-fg'">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                    <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">{{'PAGE.LOTTERY.cate.thai.thaicode.thai_set_3' | translate}}
+                                </div>
+                                <div class="font-size-20 line-height-50" [ngClass]="true?'light-green-fg':'dark-red-fg'">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                    <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">{{'PAGE.LOTTERY.cate.thai.thaicode.thai_set_4' | translate}}
+                                </div>
+                                <div class="font-size-20 line-height-50" [ngClass]="true?'light-green-fg':'dark-red-fg'">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                    <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h4 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง(จับยี่กี)
+                                </div>
+                                <div class="font-size-20 line-height-60" [ngClass]="true?'light-green-fg':'dark-red-fg'">
                                     24 ชั่วโมง
                                 </div>
                                 <div class="font-size-12 line-height-12">
-                                   <span class="text-boxed">เปิดแทง 88 รอบ</span> 
-                                </div>
-                            </div>
-    
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="card">
-                    <div class="card-preview">
-                        <div class="fuse-card">
-                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">จับยี่กี VIP
-                                </div>
-                                <div class="green-fg font-size-30 line-height-50">
-                                    24 ชั่วโมง
-                                </div>
-                                <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">เปิดแทง 88 รอบ</span> 
-                                </div>
-                            </div>
-    
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="card">
-                    <div class="card-preview">
-                        <div class="fuse-card">
-                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">หวยออมสิน
-                                </div>
-                                <div class="red-fg font-size-30 line-height-50">
-                                    ปิดรับแทง
-                                </div>
-                                <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
-                                </div>
-                            </div>
-    
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="card">
-                    <div class="card-preview">
-                        <div class="fuse-card">
-                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">หวย ธกส.
-                                </div>
-                                <div class="red-fg font-size-30 line-height-50">
-                                    ปิดรับแทง
-                                </div>
-                                <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                    <span class="text-boxed smoke-gray-fg">เปิดแทง 64 รอบ</span> 
                                 </div>
                             </div>
     
@@ -115,211 +146,207 @@
                 </div>
             </div>
         </div>
-        
-        <div id="oversea-lottery">
-            <div class="mat-title mt-32">หวยต่างประเทศ</div>
+        <div id="oversea">
+            <div class="mat-title mt-32">{{'PAGE.LOTTERY.cate.oversea' | translate}}</div>
             <div class="cards">
                 <div class="card">
                     <div class="card-preview">
-    
-                        <div class="fuse-card">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
                             <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">หุ้นดาวน์โจน
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">มาเลย์
                                 </div>
-                                <div class="green-fg font-size-30 line-height-50">
+                                <div class="light-green-fg font-size-20 line-height-50">
                                     01:45:53
                                 </div>
                                 <div class="font-size-12 line-height-12">
-                                   <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
                                 </div>
                             </div>
-    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">ลาว
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="false ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h3 white-fg font-weight-400" [ngClass]="true?'white-fg':'secondary-text'">เวียดนาม(ฮานอยพิเศษ)
+                                </div>
+                                <div class="dark-red-fg font-size-20 line-height-50">
+                                    ปิดรับแทง
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                    <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h3 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">เวียดนาม(ฮานอย)
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h3 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">เวียดนาม(ฮานอยVIP)
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="false ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">ดาวน์โจน
+                                </div>
+                                <div class="dark-red-fg font-size-20 line-height-50">
+                                    ปิดรับแทง
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                    <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">อียิปต์
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                
                 <div class="card">
                     <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="false ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">นิเคอิเช้า
+                                </div>
+                                <div class="dark-red-fg font-size-20 line-height-50">
+                                    ปิดรับแทง
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                    <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="false ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">นิเคอิบ่าย
+                                </div>
+                                <div class="dark-red-fg font-size-20 line-height-50">
+                                    ปิดรับแทง
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                    <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="false ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">จีนเช้า
+                                </div>
+                                <div class="dark-red-fg font-size-20 line-height-50">
+                                    ปิดรับแทง
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                    <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="false ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">จีนบ่าย
+                                </div>
+                                <div class="dark-red-fg font-size-20 line-height-50">
+                                    ปิดรับแทง
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                    <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
     
-                        <div class="fuse-card">
-                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">หวยมาเลย์
-                                </div>
-                                <div class="red-fg font-size-30 line-height-50">
-                                    ปิดรับแทง
-                                </div>
-                                <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
-                                </div>
-                            </div>
-    
-                        </div>
-                    </div>
-                </div>
-
                 <div class="card">
                     <div class="card-preview">
-    
-                        <div class="fuse-card">
+                        <div class="fuse-card" [ngClass]="false ? 'active' : 'inactive'">
                             <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">นิเคอิรอบเช้า
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">ฮั่วเส็งเช้า
                                 </div>
-                                <div class="red-fg font-size-30 line-height-50">
+                                <div class="dark-red-fg font-size-20 line-height-50">
                                     ปิดรับแทง
                                 </div>
                                 <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
-                                </div>
-                            </div>
-    
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="card">
-                    <div class="card-preview">
-    
-                        <div class="fuse-card">
-                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">จีนรอบเช้า
-                                </div>
-                                <div class="red-fg font-size-30 line-height-50">
-                                    ปิดรับแทง
-                                </div>
-                                <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
-                                </div>
-                            </div>
-    
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-preview">
-    
-                        <div class="fuse-card">
-                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">ฮั่วเส็งรอบเช้า
-                                </div>
-                                <div class="red-fg font-size-30 line-height-50">
-                                    ปิดรับแทง
-                                </div>
-                                <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
-                                </div>
-                            </div>
-    
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-preview">
-    
-                        <div class="fuse-card">
-                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">หุ้นไต้หวัน
-                                </div>
-                                <div class="red-fg font-size-30 line-height-50">
-                                    ปิดรับแทง
-                                </div>
-                                <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
-                                </div>
-                            </div>
-    
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-preview">
-    
-                        <div class="fuse-card">
-                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">หุ้นเกาหลี
-                                </div>
-                                <div class="red-fg font-size-30 line-height-50">
-                                    ปิดรับแทง
-                                </div>
-                                <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
-                                </div>
-                            </div>
-    
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-preview">
-    
-                        <div class="fuse-card">
-                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">นิเคอิรอบบ่าย
-                                </div>
-                                <div class="red-fg font-size-30 line-height-50">
-                                    ปิดรับแทง
-                                </div>
-                                <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
-                                </div>
-                            </div>
-    
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-preview">
-    
-                        <div class="fuse-card">
-                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">จีนรอบบ่าย
-                                </div>
-                                <div class="red-fg font-size-30 line-height-50">
-                                    ปิดรับแทง
-                                </div>
-                                <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
-                                </div>
-                            </div>
-    
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-preview">
-    
-                        <div class="fuse-card">
-                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">ฮั่วเส็งรอบบ่าย
-                                </div>
-                                <div class="red-fg font-size-30 line-height-50">
-                                    ปิดรับแทง
-                                </div>
-                                <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
-                                </div>
-                            </div>
-    
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-preview">
-                        <div class="fuse-card">
-                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">หวยลาว
-                                </div>
-                                <div class="red-fg font-size-30 line-height-50">
-                                    ปิดรับแทง
-                                </div>
-                                <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                    <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
                                 </div>
                             </div>
                         </div>
@@ -328,15 +355,15 @@
 
                 <div class="card">
                     <div class="card-preview">
-                        <div class="fuse-card">
+                        <div class="fuse-card" [ngClass]="false ? 'active' : 'inactive'">
                             <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">หวยลาวสตาร์
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">ฮั่วเส็งบ่าย
                                 </div>
-                                <div class="red-fg font-size-30 line-height-50">
+                                <div class="dark-red-fg font-size-20 line-height-50">
                                     ปิดรับแทง
                                 </div>
                                 <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                    <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
                                 </div>
                             </div>
                         </div>
@@ -345,15 +372,15 @@
 
                 <div class="card">
                     <div class="card-preview">
-                        <div class="fuse-card">
+                        <div class="fuse-card" [ngClass]="false ? 'active' : 'inactive'">
                             <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">หุ้นสิงคโปร์
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">ไต้หวัน
                                 </div>
-                                <div class="red-fg font-size-30 line-height-50">
+                                <div class="dark-red-fg font-size-20 line-height-50">
                                     ปิดรับแทง
                                 </div>
                                 <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                    <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
                                 </div>
                             </div>
                         </div>
@@ -362,15 +389,15 @@
 
                 <div class="card">
                     <div class="card-preview">
-                        <div class="fuse-card">
+                        <div class="fuse-card" [ngClass]="false ? 'active' : 'inactive'">
                             <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">หุ้นอินเดีย
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">เกาหลี
                                 </div>
-                                <div class="red-fg font-size-30 line-height-50">
+                                <div class="dark-red-fg font-size-20 line-height-50">
                                     ปิดรับแทง
                                 </div>
                                 <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                    <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
                                 </div>
                             </div>
                         </div>
@@ -379,15 +406,15 @@
 
                 <div class="card">
                     <div class="card-preview">
-                        <div class="fuse-card">
+                        <div class="fuse-card" [ngClass]="false ? 'active' : 'inactive'">
                             <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">หวยฮานอยพิเศษ
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">สิงคโปร์
                                 </div>
-                                <div class="red-fg font-size-30 line-height-50">
+                                <div class="dark-red-fg font-size-20 line-height-50">
                                     ปิดรับแทง
                                 </div>
                                 <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                    <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
                                 </div>
                             </div>
                         </div>
@@ -396,15 +423,15 @@
 
                 <div class="card">
                     <div class="card-preview">
-                        <div class="fuse-card">
+                        <div class="fuse-card" [ngClass]="false ? 'active' : 'inactive'"> 
                             <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">หวยฮานอย
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">อินเดีย
                                 </div>
-                                <div class="red-fg font-size-30 line-height-50">
+                                <div class="dark-red-fg font-size-20 line-height-50">
                                     ปิดรับแทง
                                 </div>
                                 <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                    <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
                                 </div>
                             </div>
                         </div>
@@ -413,15 +440,15 @@
 
                 <div class="card">
                     <div class="card-preview">
-                        <div class="fuse-card">
+                        <div class="fuse-card" [ngClass]="false ? 'active' : 'inactive'">
                             <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">หวยฮานอย VIP
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">รัสเซีย
                                 </div>
-                                <div class="red-fg font-size-30 line-height-50">
+                                <div class="dark-red-fg font-size-20 line-height-50">
                                     ปิดรับแทง
                                 </div>
                                 <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                    <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
                                 </div>
                             </div>
                         </div>
@@ -430,32 +457,15 @@
 
                 <div class="card">
                     <div class="card-preview">
-                        <div class="fuse-card">
+                        <div class="fuse-card" [ngClass]="false ? 'active' : 'inactive'">
                             <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">หวยฮานอย 4D
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">เยอรมัน
                                 </div>
-                                <div class="red-fg font-size-30 line-height-50">
+                                <div class="dark-red-fg font-size-20 line-height-50">
                                     ปิดรับแทง
                                 </div>
                                 <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-preview">
-                        <div class="fuse-card">
-                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">หวยฮานอย 5G
-                                </div>
-                                <div class="red-fg font-size-30 line-height-50">
-                                    ปิดรับแทง
-                                </div>
-                                <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                    <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
                                 </div>
                             </div>
                         </div>
@@ -464,15 +474,36 @@
 
                 <div class="card">
                     <div class="card-preview">
-                        <div class="fuse-card">
+                        <div class="fuse-card" [ngClass]="false ? 'active' : 'inactive'">
                             <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">หุ้นรัสเซีย
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">อังกฤษ
                                 </div>
-                                <div class="red-fg font-size-30 line-height-50">
+                                <div class="dark-red-fg font-size-20 line-height-50">
                                     ปิดรับแทง
                                 </div>
                                 <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                    <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pingpong">
+            <div class="mat-title mt-32">หวยปิงปอง</div>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง15.00
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
                                 </div>
                             </div>
                         </div>
@@ -481,15 +512,15 @@
 
                 <div class="card">
                     <div class="card-preview">
-                        <div class="fuse-card">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
                             <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">หุ้นเยอรมัน
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง15.15
                                 </div>
-                                <div class="red-fg font-size-30 line-height-50">
-                                    ปิดรับแทง
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
                                 </div>
                                 <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
                                 </div>
                             </div>
                         </div>
@@ -498,15 +529,15 @@
 
                 <div class="card">
                     <div class="card-preview">
-                        <div class="fuse-card">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
                             <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">หุ้นอังกฤษ
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง15.30
                                 </div>
-                                <div class="red-fg font-size-30 line-height-50">
-                                    ปิดรับแทง
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
                                 </div>
                                 <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
                                 </div>
                             </div>
                         </div>
@@ -515,21 +546,581 @@
 
                 <div class="card">
                     <div class="card-preview">
-                        <div class="fuse-card">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
                             <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
-                                <div class="h1 secondary-text font-weight-500">หุ้นอียิปต์
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง15.45
                                 </div>
-                                <div class="red-fg font-size-30 line-height-50">
-                                    ปิดรับแทง
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
                                 </div>
                                 <div class="font-size-12 line-height-12">
-                                    <span class="text-boxed">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง16.00
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง16.15
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง16.30
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง16.45
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง17.00
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง17.15
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง17.30
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง17.45
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง18.00
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง18.15
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง18.30
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง18.45
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง19.00
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง19.15
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง19.30
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง19.45
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง20.00
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง20.15
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง20.30
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง20.45
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง21.00
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง21.15
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง21.30
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง21.45
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง22.00
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง22.15
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง22.30
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง22.45
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง23.00
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง23.15
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง23.30
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง23.45
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-preview">
+                        <div class="fuse-card" [ngClass]="true ? 'active' : 'inactive'">
+                            <div class="pt-8 pb-32" fxLayout="column" fxLayoutAlign="center center">
+                                <div class="h2 white-fg font-weight-500" [ngClass]="true?'white-fg':'secondary-text'">หวยปิงปอง23.59
+                                </div>
+                                <div class="light-green-fg font-size-20 line-height-50">
+                                    01:45:53
+                                </div>
+                                <div class="font-size-12 line-height-12">
+                                   <span class="text-boxed smoke-gray-fg">ปิดรับแทง 03/07/2563 02:00:00</span> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

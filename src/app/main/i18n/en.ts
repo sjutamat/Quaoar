@@ -6,8 +6,25 @@ export const locale = {
                 'TITLE':'Home page',
                 'HEADERPAGE':'News'
             },
-            'LOTTERRY':{
-                'TITLE' : 'Lottery'
+            'LOTTERY':{
+                'cate':{
+                    'thai':{
+                        'title':'Thai',
+                        'thaicode':{
+                            'government':'Government',
+                            'thai_c9_1':'Thai(C9)Break1',
+                            'thai_c9_2':'Thai(C9)Break1',
+                            'thai_set_1':'Thai(Set)Break1',
+                            'thai_set_2':'Thai(Set)Break2',
+                            'thai_set_3':'Thai(Set)Break3',
+                            'thai_set_4':'Thai(Set)Break4'
+                        }
+                    }
+                    ,
+                    'oversea':'Oversea',
+                    'pingpong':'หวยปิงปอง'
+                },
+                'roundclose' : 'ปิดรับแทง'
             },
             'ORDERS':{
                 'TITLE': 'Orders'
